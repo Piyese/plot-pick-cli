@@ -1,0 +1,13 @@
+[package]
+name = "topic"
+version = "0.1.0"
+edition = "2021"
+authors = ["Paul Iyese<iyese27@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.4"
+serde = { version="1.0.136", features=["derive"] }
+serde_yaml = "0.8.23"
+structopt = "0.3.26"
