@@ -5,6 +5,7 @@ use topic::{
 };
 
 fn main() {
+
     let opt = Options::from_args();
     let mut choices = fetch_topics();
     

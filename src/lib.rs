@@ -4,6 +4,8 @@ use std::path::Path;
 use rand::Rng;
 use std::fs;
 use std::io::Write;
+use colored::*;
+
 
 #[derive(Debug, StructOpt)]
 pub struct Options {
@@ -76,7 +78,7 @@ pub fn how_many_random(amt:u32, lst:&Choices){
             topic_obj = &lst.list[random_index];
         }
         index_list.push(topic_obj.clone());
-        print!("| {} |",index_list[i as usize].topic);
+        print!("| {} |",index_list[i as usize].topic.bold().magenta());
     }
     //dbg!(&index_list);
     println!();
